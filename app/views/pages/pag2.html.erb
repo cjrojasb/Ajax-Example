@@ -1,0 +1,10 @@
+<h1>Pages#pag2</h1>
+<p>Find me in app/views/pages/pag2.html.erb</p>
+
+<button id="nuevo-post">Nuevo Post</button>
+
+<% @posts.each do |post| %>
+  <h3><%= post.title %></h3>
+<% end %>
+
+<%= link_to 'Volver a Página 1', pages_pag1_path %>

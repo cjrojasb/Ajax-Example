@@ -1,0 +1,19 @@
+<h1>Pages#pag1</h1>
+<p>Find me in app/views/pages/pag1.html.erb</p>
+
+<%= link_to 'Ir a página 2', pages_pag2_path, id:'alert'  %>
+
+<script>
+  $("#alert").on('click', function(){
+    alert("Bienvenido");
+  });
+</script>
+
+<br>
+
+<%= link_to "Ir a página 2", pages_pag2_path, data: { turbolinks: false }, remote: true %>
+
+<div id="contenido">
+  
+</div>
+
